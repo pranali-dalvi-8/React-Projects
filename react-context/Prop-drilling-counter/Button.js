@@ -1,11 +1,11 @@
 import React from "react";
 import Counter from "./Counter";
 
-function Button(){
+function Button({count,setCount}){
     return(
        <div>
            <p>Button</p>
-           <Counter />
+           <Counter count={count} setCount={setCount}  />
        </div>
     );
 }

@@ -1,9 +1,13 @@
 import React from "react";
+import { useContext } from "react";
+import { counterContext } from "./Context";
 
-function Counter({count, setCount}){
+
+function Counter(){
+    const value= useContext(counterContext);
     return(
        <div>
-          <button onClick={()=>setCount(count+1)}> Count is {count}</button>
+          <button > Count is {value}</button>
        </div>
     );
 }

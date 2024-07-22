@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
-import { counterContext } from './Context';
 import { useState } from 'react';
 
 function App() {
@@ -9,9 +8,9 @@ function App() {
   return (
     <>
 
-    <counterContext.Provider value={count}>
+    
     <div className="App">
-    <Navbar />
+    <Navbar count={count} setCount={setCount} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
        
@@ -22,7 +21,6 @@ function App() {
      
       </header>
     </div>
-    </counterContext.Provider>
     </>
   );
 }

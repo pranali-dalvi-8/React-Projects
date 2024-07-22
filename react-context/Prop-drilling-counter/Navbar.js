@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "./Button";
 
-function Navbar(){
+function Navbar({count, setCount}){
     return(
        <div>
            <p>Navbar</p>
-           <Button />
+           <Button count={count}  setCount={setCount} />
        </div>
     );
 }
