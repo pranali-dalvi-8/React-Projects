@@ -1,6 +1,7 @@
 import './App.css';
 import Nasa from './Nasa';
 import FetchGithubUser from './FetchGithubUser';
+import AxiosMovieData from './AxiosMovieData';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
       <header className="App-header">
         {/* <h1>Welcome To Github Repositories </h1> */}
         {/* <FetchGithubUser/> */}
-        <Nasa/>
+        {/* <Nasa/> */}
+        <AxiosMovieData/>
       </header>
     </div>
   );
