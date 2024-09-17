@@ -7,6 +7,7 @@ const About=lazy(()=> import("./Components/About"));
 const Home=lazy(()=> import("./Components/Home"));
 const Placements=lazy(()=> import("./Components/Placements"));
 const Campus=lazy(()=> import("./Components/Campus"));
+const Error=lazy(()=> import("./Components/Error"))
 
 
 
@@ -20,7 +21,8 @@ function App() {
     },
     {
       path: "/about",
-      element: <About/>,
+      element: <About/>
+      
     },
     {
       path: "/placements",
@@ -29,6 +31,10 @@ function App() {
     {
       path: "/campus",
       element: <Campus/>
+    },
+    {
+      path: "*",
+      element: <Error/>
     }
   ])
   return (
